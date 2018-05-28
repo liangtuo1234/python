@@ -11,12 +11,12 @@ import urllib.parse
 #sys.setdefaultencoding('utf8')
 
 ddmsg="你好，我是慎"
-mobile="15986845591"
+mobile="*******"
 
 # 获取钉钉消息
 def extractionMessage():
     #拼接需要发送的消息
-    return "##### <font color=red> @15986845591钉钉message </font>"
+    return "##### <font color=red> @**********钉钉message </font>"
 
 #发送钉钉消息
 def sendDingDingMessage(url,data):
@@ -28,8 +28,8 @@ def sendDingDingMessage(url,data):
 
     #主函数
 def main():
-    posturl = "https://oapi.dingtalk.com/robot/send?access_token=b17eb64223cf39738a404acd375e88ce21d1a6d2c97e448a5f809d7761b94fe2"
-    data = {"msgtype": "markdown", "markdown": {"text": extractionMessage(),"title":"Jenkins"},"at": {"atMobiles":["15986845591"],"isAtAll": "false"}}
+    posturl = "https://oapi.dingtalk.com/robot/send?access_token=b17eb64223cf39738a404acd3*************"
+    data = {"msgtype": "markdown", "markdown": {"text": extractionMessage(),"title":"Jenkins"},"at": {"atMobiles":["**********"],"isAtAll": "false"}}
     sendDingDingMessage(posturl, data)
 
 main()
